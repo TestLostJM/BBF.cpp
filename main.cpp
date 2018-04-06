@@ -32,4 +32,5 @@ int main()
         cout << storage[i] << endl; //Replace this with whatever
     }
     
+    file.close();
 }
