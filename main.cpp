@@ -23,13 +23,19 @@ int main()
         //To see it as it's read in
         //cout << tmp << endl;
     }
-    //cout << storage.size() << endl;
+    cout << "Lines of file: " << storage.size() << endl;
 
     //Do something
     cout << "Doing something" << endl;
-    for (int i = 0; i < storage.size(); i ++)
+    for (int i = 0; i < storage.size(); i++)
     {
-        cout << storage[i] << endl; //Replace this with whatever
+        for (int j = 0; j < storage.size(); j++)
+        {
+            for (int k = 0; k < storage.size(); k++)
+            {
+                cout << storage[i] << " " << storage[j] << " " << storage[k] << endl; //Replace this with whatever
+            }
+        }
     }
     
     file.close();
